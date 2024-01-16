@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-500 duration-300 text-gray-100 font-medium px-3 sm:px-7 py-0.5 sm:py-1.5 rounded;
+}
+
+.primary {
+  @apply transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-500 duration-300 text-gray-100 font-medium px-7 py-1.5 rounded;
+}
