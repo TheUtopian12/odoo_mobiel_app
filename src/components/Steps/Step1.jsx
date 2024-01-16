@@ -8,7 +8,7 @@ export const Step1 = ({ size }) => {
         <h1 className="text-2xl sm:text-5xl text-white font-bold">
           Paso 1: Accede a la tienda de Android:
         </h1>
-        {size > 450 ? (
+        {size < 450 ? (
           <>
             <p className="text-lg sm:text-2xl text-white">
               Dirígete a la tienda de aplicaciones de Android utilizando el
@@ -19,7 +19,7 @@ export const Step1 = ({ size }) => {
               <button className="primary">Ir a tienda</button>
             </a>
           </>
-        ) : (
+        ) : size > 450 ? (
           <>
             {" "}
             <p className="text-lg sm:text-2xl text-white">
@@ -28,6 +28,8 @@ export const Step1 = ({ size }) => {
             </p>
             <img src={QR} alt="QR CODE" className="w-[250px]" />
           </>
+        ) : (
+          ""
         )}
         {/** */}
       </div>
